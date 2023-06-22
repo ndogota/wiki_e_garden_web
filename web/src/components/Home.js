@@ -3,7 +3,9 @@ import {Box} from '@mui/material';
 
 import List from './List';
 
-function Banner() {
+function Home() {
+
+  //FAIRE UN APPEL POUR TOUTES LES PLANTES
   const data = {
     "plants": [
       {
@@ -219,34 +221,31 @@ function Banner() {
     ],
   }
 
-  const [valeurInput, setValeurInput] = useState('');
+  const [valueInput, setvalueInput] = useState('');
 
   return (
     <>
-      <section className="u-align-left u-clearfix u-image u-section-2" data-image-width="1980"
-               data-image-height="1094" id="carousel_cc53">
-        <Box className="u-clearfix u-sheet u-valign-middle u-sheet-1">
-          <Box className="u-align-left u-container-style u-group u-opacity u-opacity-60 u-white u-group-1">
-            <Box className="u-container-layout u-valign-middle u-container-layout-1">
-              <h1 className="u-text u-text-default u-text-palette-3-base u-title u-text-1">Ferme d'agrumes</h1>
-              <p className="u-large-text u-text u-text-default u-text-variant u-text-2">Nous exportons de Chypre vers
-                l'Europe des produits frais de qualité: pamplemousse blanc et rouge, oranges de Valence, grenade,
-                mandoras
-                et mandarines Nova.
-              </p>
-              <Box className="u-container-input">
+      <section className="u-section-2">
+        <Box className="u-group-1">
+          <Box className="u-container-layout-1">
+            <h1 className="u-text-1">Ferme d'agrumes</h1>
+            <Box className="u-text-2">Nous exportons de Chypre vers
+              l'Europe des produits frais de qualité: pamplemousse blanc et rouge, oranges de Valence, grenade,
+              mandoras
+              et mandarines Nova.
+            </Box>
+            <Box className="u-container-input">
 
-                <input className="u-container-input-text" type="text" id="searchInput" value={valeurInput}
-                       onChange={e => setValeurInput(e.target.value)}/>
-                <button className="u-input-button">Rechercher</button>
-              </Box>
+              <input className="u-container-input-text" type="text" id="searchInput" value={valueInput}
+                     onChange={e => setvalueInput(e.target.value)}/>
+              <button className="u-input-button">Rechercher</button>
             </Box>
           </Box>
         </Box>
       </section>
-      <List plants={data.plants} valeurInput={valeurInput}/>
+      <List plants={data.plants} valueInput={valueInput}/>
     </>
   );
 }
 
-export default Banner;
+export default Home;

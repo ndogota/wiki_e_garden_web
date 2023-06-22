@@ -1,6 +1,4 @@
-/*
-HEADER
-*/
+/*HEADER*/
 header img {
     height: 80px;
     margin-left: 40px;
@@ -49,10 +47,7 @@ header * {
     text-decoration: none;
 }
 
-/*
-BANNER
- */
-
+/*BANNER*/
 .u-section-2 {
     background-image: url('../../public/assets/images/banner.jpeg');
     background-position: 50% 50%;
@@ -105,7 +100,6 @@ BANNER
 
 .u-container-input-text {
     height: 30px;
-    width: 100%;
     margin-bottom: 5px;
 }
 
@@ -174,7 +168,6 @@ BANNER
     flex-direction: column;
 }
 
-.social-icon,
 .menu {
     position: relative;
     display: flex;
@@ -184,24 +177,11 @@ BANNER
     flex-wrap: wrap;
 }
 
-.social-icon__item,
-.menu__item {
+.menu-item {
     list-style: none;
 }
 
-.social-icon__link {
-    font-size: 2rem;
-    color: #fff;
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5s;
-}
-
-.social-icon__link:hover {
-    transform: translateY(-10px);
-}
-
-.menu__link {
+.menu-link {
     font-size: 1.2rem;
     color: #fff;
     margin: 0 10px;
@@ -212,7 +192,7 @@ BANNER
     font-weight: 300;
 }
 
-.menu__link:hover {
+.menu-link:hover {
     opacity: 1;
 }
 
@@ -231,10 +211,13 @@ BANNER
 }
 
 .content-details {
-    position: absolute;
     margin: 0 100px;
     background: rgb(255 255 255 / 81%);
-    top: 35%;
+    border-radius: 25px;
+}
+
+.content-details-features {
+    background: rgb(255 255 255 / 81%);
     border-radius: 25px;
 }
 
@@ -245,6 +228,46 @@ BANNER
 .harvestDate,
 .plantationDate {
     display: flex;
+}
+
+/*CALENDRIER*/
+.content-details-carousel {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.calendar {
+    text-align: center;
+}
+
+.months {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.harvestDate,
+.plantationDate {
+    flex-direction: column;
+}
+
+.harvestDateTitle,
+.plantationDateTitle {
+    text-align: center;
+}
+
+.monthHarvestDate,
+.monthPlantationDate {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.selected {
+    background-color: #f1c50e;
+    color: #000;
 }
 
 /*RESPONSIVE*/
@@ -265,6 +288,7 @@ BANNER
     .u-section-2 .u-group-1 {
         margin: 100px 0 0 0;
         width: 100%;
+        justify-content: center;
     }
 
     .u-section-2 .u-text-1 {

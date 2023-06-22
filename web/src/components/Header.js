@@ -4,33 +4,8 @@ import Button from "@mui/material/Button";
 import {useState} from 'react';
 
 function Header() {
-
   const mobile = useMediaQuery('(max-width: 768px)');
   const [state, setState] = useState(false);
-  const [openProfile, setOpenProfile] = useState(false);
-
-  // return (
-  //   <header>
-
-  //     {desktop ? (
-  //       <>
-  //         <nav>
-  //           <ul>
-  //             <li><a href="/">Home</a></li>
-  //             <li><a href="#">Login</a></li>
-  //             <li><a href="#">Register</a></li>
-  //           </ul>
-  //         </nav>
-  //       </>
-  //     ) : (
-  //       <>
-  //         <nav>
-  //           <MenuIcon/>
-  //         </nav>
-  //       </>
-  //     )}
-  //   </header>
-  // );
 
   return (
     <header>
@@ -46,16 +21,16 @@ function Header() {
             <Drawer className='drawer' anchor={'left'} open={state} onClose={() => setState(false)}>
               <Box className='header-burger-link'>
                 <a href="/">Home</a>
-                <a href="#">Login</a>
-                <a href="#">Register</a>
+                <a href="/">Login</a>
+                <a href="/">Register</a>
               </Box>
             </Drawer>
           </>
         ) : (
           <Box className='header-link'>
             <a href="/">Home</a>
-            <a href="#">Login</a>
-            <a href="#">Register</a>
+            <a href="/">Login</a>
+            <a href="/">Register</a>
           </Box>
         )}
     </header>
