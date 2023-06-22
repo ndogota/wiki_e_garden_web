@@ -1,0 +1,23 @@
+{
+  "name": "wiki_e_garden_web",
+  "version": "1.0.0",
+  "description": "website for the wiki of egarden",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndogota/wiki_e_garden_web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ndogota/wiki_e_garden_web/issues"
+  },
+  "homepage": "https://github.com/ndogota/wiki_e_garden_web#readme",
+  "dependencies": {
+    "mongoose": "^7.3.0"
+  }
+}
