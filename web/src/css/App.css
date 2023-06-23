@@ -133,7 +133,6 @@ header * {
 }
 
 /*LIST*/
-
 .list-title {
     font-weight: 700;
     font-size: 4.5rem;
@@ -204,14 +203,54 @@ header * {
 }
 
 /*DETAILS*/
+.content-details-head {
+    padding-top: 30px;
+}
+
+.content-wrapper-details-features {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: center;
+}
+
+.content-wrapper-details {
+    padding: 10px;
+    text-align: center;
+}
+
+.name {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 20px;
+    margin: 0 100px 0;
+}
+
+.column {
+    flex: 1 1 50%;
+}
+
+.features-title {
+    padding: 5px;
+    font-size: 25px;
+}
+
+.features-text {
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+
 .layout-detail {
-    height: 630px;
+    height: 900px;
     width: 100%;
-    margin: 100px 0;
+    margin: 100px 0 0;
 }
 
 .content-details {
-    margin: 0 100px;
+    margin: 20px 100px;
     background: rgb(255 255 255 / 81%);
     border-radius: 25px;
 }
@@ -219,10 +258,6 @@ header * {
 .content-details-features {
     background: rgb(255 255 255 / 81%);
     border-radius: 25px;
-}
-
-.content-wrapper-details {
-    padding: 10px;
 }
 
 .harvestDate,
@@ -256,6 +291,7 @@ header * {
 .harvestDateTitle,
 .plantationDateTitle {
     text-align: center;
+    font-size: 25px;
 }
 
 .monthHarvestDate,

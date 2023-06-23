@@ -115,24 +115,26 @@ function Details() {
                  backgroundImage: `url(${data.attributes.imageUrl})`,
                  backgroundSize: 'cover'
                }}>
-            <Box className="content-details">
-              <Box className="content-wrapper-details">
-                <Box className="name">
-                  Nom: {data.name}
-                </Box>
-                <Box className="description">
-                  Description: {data.attributes.description}
+            <Box className="content-details-head">
+              <Box className="content-details">
+                <Box className="content-wrapper-details">
+                  <Box className="name">
+                    {data.name}
+                  </Box>
+                  <Box className="description">
+                    {data.attributes.description}
+                  </Box>
                 </Box>
               </Box>
             </Box>
             <Box className="content-details">
-              <Box className="content-wrapper-details">
+              <Box className="content-wrapper-details-features">
                 {data.attributes.features.map((res, index) => {
                     return (
-                      <Box key={index}>
-                        <Box>{res.plantFeatureName}</Box>
+                      <Box className="column" key={index}>
+                        <Box className="features-title">{res.plantFeatureName}</Box>
                         {Object.entries(res.values).map(([key, value]) => (
-                          <Box key={key}>
+                          <Box className="features-text" key={key}>
                             {`${key}: ${value}`}
                           </Box>
                         ))}
